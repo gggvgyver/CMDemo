@@ -9,5 +9,18 @@ namespace WPFUI.ViewModels
 {
     public class ShellViewModel : Screen
     {
+        private string _firstName = "별이";
+
+        public string FirstName
+        {
+            get
+            {
+                return _firstName;
+            }
+            set
+            {
+                _firstName = value;
+            }
+        }
     }
 }
