@@ -4,11 +4,11 @@
 winexe
 C#
 .cs
-C:\Appzs\Vs\gyver\CMDemo\CMDemo\WPFUI\obj\Debug\
+C:\Appzs\Vs\gyver\CMDemo\CMDemo\WPFUI\obj\Release\
 WPFUI
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Appzs\Vs\gyver\CMDemo\CMDemo\WPFUI\App.xaml
 1-250345876
 
