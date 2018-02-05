@@ -10,6 +10,9 @@ namespace WPFUI.ViewModels
     public class ShellViewModel : Screen
     {
         private string _firstName = "성";
+        private string _lastName = "이름";
+        private BindableCollection<PersonModel> _people = new BindableCollection<PersonModel>();
+
         public string FirstName
         {
             get
@@ -24,7 +27,6 @@ namespace WPFUI.ViewModels
             }
         }
 
-        private string _lastName = "이름";
         public string LastName
         {
             get
@@ -43,6 +45,24 @@ namespace WPFUI.ViewModels
         {
             get { return $"{FirstName} {LastName}"; }
         }
+
+        
+        public BindableCollection<PersonModel> People
+            {
+                get { return _people; }
+                set { _people = value; }
+            }
+
+        
+        public PersonModel SelectedPerson
+            {
+              get { return _selectedPerson; }
+              set 
+                  { 
+                    _selectedPerson = value;
+                    NotifyOfPropertyChange(() => SelectedPerson);
+                  }
+            }
 
     }
 }
